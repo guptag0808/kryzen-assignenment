@@ -24,7 +24,7 @@ function Navbar() {
   return (
 	<nav>
     <div className="nav-wrapper">
-      <Link to={state?"/" : "/login"} className="brand-logo left">InstaFlick</Link>
+      <Link to={state?"/" : "/login"} className="brand-logo left">Kryzen</Link>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         {renderList()}
       </ul>

@@ -44,7 +44,7 @@ function Signup() {
    <>
   <div className='myCard'>
     <div className="card login-card" >
-       <h1>FotoFlick</h1>
+       <h1>Kryzen</h1>
        <input type="text"  placeholder='Enter Your Name' value={username} 
          onChange={(e)=>setusername(e.target.value)}/>
        

@@ -7,7 +7,7 @@ function Preview() {
 
 	const renderFun=()=>{
 		window.open('http://localhost:8000/pdfGenerater')
-		// fetch("http://localhost:8000/pdfGenerater")
+		
     }
   return (
 	<>
