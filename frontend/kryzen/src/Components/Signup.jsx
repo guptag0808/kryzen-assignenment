@@ -51,7 +51,7 @@ function Signup() {
        <input type="password" placeholder='Enter Your Password'  value={password} 
          onChange={(e)=>setPassword(e.target.value)}/>
        <button className="btn waves-effect waves-light"   onClick={postFun}>
-        Register 
+        Register
       </button>
       <p>Already have an account ?<Link to ="/login" > <span className='login-span'>Login</span></Link></p>
     </div>
