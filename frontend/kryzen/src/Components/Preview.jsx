@@ -6,7 +6,7 @@ function Preview() {
 	let {name,age,address,photo} = location.state;
 
 	const renderFun=()=>{
-		window.open('http://localhost:8000/pdfGenerater')
+		window.open('https://kryzen-a5fj.onrender.com/pdfGenerater')
 		
     }
   return (

@@ -11,7 +11,7 @@ function Form() {
 
    useEffect(()=>{
       if(url){
-		  fetch("http://localhost:8000/data",{
+		  fetch("https://kryzen-a5fj.onrender.com/data",{
 		  method:"post",
 		  headers:{
 			"Content-Type":"application/json",

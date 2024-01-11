@@ -13,7 +13,7 @@ function Login() {
   };
   const postFun=()=>{
     
-    fetch("http://localhost:8000/login",{
+    fetch("https://kryzen-a5fj.onrender.com/login",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

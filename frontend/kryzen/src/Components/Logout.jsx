@@ -11,7 +11,7 @@ function Logout() {
   };
   
    const logoutFun= ()=>{
-	fetch("http://localhost:8000/logout")
+	fetch("https://kryzen-a5fj.onrender.com/logout")
     .then((res)=>{
        
         M.toast({html: res.msg , classes:'#00bfa5 teal accent-4'})

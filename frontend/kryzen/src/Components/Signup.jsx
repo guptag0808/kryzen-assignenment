@@ -18,7 +18,7 @@ function Signup() {
      if(!passwordRegex.test(password)){
       return M.toast({html: ' Your Password should have Atleast 8 characters, at least one uppercase letter, one lowercase letter, one number, and one special character' ,classes:'#b71c1c red darken-4'})
     }
-    fetch("http://localhost:8000/signup",{
+    fetch("https://kryzen-a5fj.onrender.com/signup",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
@@ -51,7 +51,7 @@ function Signup() {
        <input type="password" placeholder='Enter Your Password'  value={password} 
          onChange={(e)=>setPassword(e.target.value)}/>
        <button className="btn waves-effect waves-light"   onClick={postFun}>
-        Login 
+        Register 
       </button>
       <p>Already have an account ?<Link to ="/login" > <span className='login-span'>Login</span></Link></p>
     </div>
