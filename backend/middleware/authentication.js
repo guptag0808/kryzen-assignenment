@@ -1,4 +1,4 @@
-
+//Authentication Middleware
 const jwt = require('jsonwebtoken')
 const {UserModel} = require('../models/userModel')
 require('dotenv').config()

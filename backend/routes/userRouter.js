@@ -17,7 +17,7 @@ userRouter.post('/signup', async (req, res) => {
 	  // Check if the user with the given email already exists
 	  const existingUser = await UserModel.findOne({ username });
   
-	  if (existingUser) {
+	  if (existingUser) { 
 		return res.status(409).json({ error: 'User with this name already exists' });
 	  }
   
@@ -58,7 +58,7 @@ userRouter.post('/signup', async (req, res) => {
 		expiresIn: '1h', // Token expires in 1 hour
 	  });
        const {_id,name}= user
-	//    res.cookie('token', token, { httpOnly: true })
+	
 	  res.status(200).send({ "msg":"Login Successfull","Token":token, user:{_id,name}});
 	} catch (error) {
 		console.log(error.message)

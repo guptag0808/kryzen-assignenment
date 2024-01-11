@@ -10,7 +10,7 @@ const {DataModel} = require('../models/formDataModel')
 const dataRouter= express.Router()
 const generatePDF = require('../utils/generatePDF')
 
-  
+ //Routes for storing  user data 
 dataRouter.post("/data",authentication,async(req,res)=>{
 	const {name,age,address,photo} = req.body
 	
@@ -25,15 +25,19 @@ dataRouter.post("/data",authentication,async(req,res)=>{
 	  }
 })
 
+//Get the Data By Id
+
 dataRouter.get('/data/:id ',async(req,res)=>{
 	try {
 		const users = await DataModel.find();
-		res.json(users);
+		res.status(200).json(users);
 	  } catch (error) {
 		console.error('Error getting form data:', error.message);
 		res.status(500).json({ message: 'Internal Server Error' });
 	  }
 })
+
+// Generate PDF 
 
 dataRouter.get('/pdfGenerater', async (req, res) => {
 	try {
